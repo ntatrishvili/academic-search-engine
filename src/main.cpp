@@ -1,8 +1,19 @@
 #include <iostream>
-#include "ligma.h"
+#include <string>
+#include <vector>
+#include "searchengine.h"
+#include "Client.h"
+#include "Feed.h"
 
-int main(){
+using namespace std;
+
+int main() {
+   // Feed feed;
+    //get the request from the user
     
-    ligmaWhat();
+    //fetch data from the arxiv
+    getData();
+    //sort and filter the received data with the additional filters
+   // filterData();
     return 0;
 }

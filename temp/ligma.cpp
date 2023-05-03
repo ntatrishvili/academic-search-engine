@@ -17,7 +17,7 @@ void ligmaWhat(){
     if (curl)
     {
         // Set the URL to retrieve
-        curl_easy_setopt(curl, CURLOPT_URL, "https://raw.githubusercontent.com/samerbahri98/cpp-project-skeleton/main/content/ligmawhat.txt");
+        curl_easy_setopt(curl, CURLOPT_URL, "http://export.arxiv.org/api/query?search_query=all:electron&start=0&max_results=10");
         
         // Set the write callback function
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writeCallback);

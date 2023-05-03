@@ -4,7 +4,7 @@ ODIR = obj
 SDIR = src
 INC = -Iinc
 
-_OBJS = ligma.o main.o
+_OBJS = Client.o main.o
 
 OBJS = $(patsubst %,$(ODIR)/%,$(_OBJS))
 
