@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string.h>
 #include "client.h"
+#include <fstream>
+#include <sstream>
 
 static size_t WriteCallback(char *contents, size_t size, size_t nmemb, void *userp)
 {
@@ -40,7 +42,16 @@ void getData()
         }
         else
         {
-            std::cout << response << std::endl;
+            // std::ofstream data("../content/data.xml", std::ofstream::out);
+            std::ofstream data("content/data.xml", std::ofstream::out);
+
+            if(data.is_open()){
+                data<<response;
+                data.close();
+            }
+            else{
+                std::cerr << "Openng data.xml file failed!"<<std::endl;
+            }
         }
 
         curl_easy_cleanup(curl);
