@@ -1,8 +1,11 @@
-# C++ Project Skeleton
+# Academic Search Engine
 
-This project uses libcurl in c++ to print the content of this [file](https://raw.githubusercontent.com/samerbahri98/cpp-project-skeleton/main/content/ligmawhat.txt) from GitHub to the standard output
-
-## How Is The Project Structured
+The module provides a framework to easily search through the Arxiv academic library. It can be used by students/researchers to find related papers and make their academic life better.
+## Table of contents
+- How the project is structured
+- Information for users
+- Information for developers
+## How The Project Is Structured
 
 - The `.cpp` ane the `.h` source files are in the `/src ` directory
 - The `.o` files will be generated in the `/obj` directory.
@@ -11,6 +14,9 @@ Each `.o` file should correspond to a `.cpp` file (more on that later)
 - Conan will generate random shell script files in the `/build` directory. do not pay it much attention.
 ---
 ## How To Build The Project
+
+- run the `make install`, then `make` command from linux terminal to build the main.out file
+- run the main.out executeble to start the program
 
 ### Downloading The Basic Binaries
 We need Conan, Build Essential, pkg-config.
@@ -48,8 +54,6 @@ make install
 This should download the packages that you need.
 ### Building The Application With GNU Make
 
- - [This](https://www.youtube.com/watch?v=GExnnTaBELk) Tutorial explains What a Makefile is and How to use it to build any project (It does not have to be a c/c++ project, it can literally be anything)
-
  - The Makefile written in this project works with any generic c++ project with a small adjustment. As seen in the tutorial, every `.cpp` file has a `.o` file. There is a variable called `_OBJS`, you have to list all your `.o` files there. **DO NOT CHANGE ANYTHING ELSE IN THE MAKEFILE**
 
  - to build your project, simply run
@@ -69,3 +73,8 @@ make clean
  ```
 
  - feel free to add any phony targets to the makefile at your own risk.
+## Class Descriptions
+
+ ### The Feed Class
+ ### The Entry Class
+ 
