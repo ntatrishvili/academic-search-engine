@@ -7,7 +7,7 @@ class Author
     std::string affiliation;
 
 public:
-    Author(std::string _name, std::string _affiliation);
+    Author(std::string _name, std::string _affiliation="");
 
     std::string getName();
     std::string getAffiliation();
