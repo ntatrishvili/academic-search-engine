@@ -1,9 +1,11 @@
 #include <curl/curl.h>
-#include <iostream>
-#include <string.h>
-#include "client.h"
 #include <fstream>
 #include <sstream>
+#include "rapidxml.hpp"
+#include <iostream>
+#include <string.h>
+#include "Feed.h"
+#include "client.h"
 
 static size_t WriteCallback(char *contents, size_t size, size_t nmemb, void *userp)
 {
@@ -20,6 +22,38 @@ std::string queryBuilder()
     return myQuery;
 }
 
+void saveData(std::string &response)
+{
+    rapidxml::xml_document<> doc;
+
+    // save the whole data as an xml
+    std::ofstream feed("content/feed.xml", std::ofstream::out);
+    if (feed.is_open())
+    {
+        char* cpy = const_cast<char *>(response.c_str());
+        doc.parse<0>(cpy);
+        rapidxml::xml_node<> *rootNode = doc.first_node("feed");
+
+        //write the modified response in feed
+        feed << response;
+        feed.close();
+    }
+    else
+    {
+        std::cerr << "Opening data.xml file failed!" << std::endl;
+    }
+}
+
+// Feed createFeed(){
+//     Feed* myFeed = new Feed();
+//     rapidxml::xml_document<> doc;
+//     std::ofstream feed("content/feed.xml", std::ofstream::out);
+
+    
+
+// }
+
+
 void getData()
 {
     CURL *curl;
@@ -29,7 +63,6 @@ void getData()
     curl = curl_easy_init();
     if (curl)
     {
-        // curl_easy_setopt(curl, CURLOPT_URL, "http://export.arxiv.org/api/query?search_query=all:electron&start=0&max_results=10");
         std::string url = queryBuilder();
         curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
@@ -42,16 +75,7 @@ void getData()
         }
         else
         {
-            // std::ofstream data("../content/data.xml", std::ofstream::out);
-            std::ofstream data("content/data.xml", std::ofstream::out);
-
-            if(data.is_open()){
-                data<<response;
-                data.close();
-            }
-            else{
-                std::cerr << "Openng data.xml file failed!"<<std::endl;
-            }
+            saveData(response);
         }
 
         curl_easy_cleanup(curl);
