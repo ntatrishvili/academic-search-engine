@@ -1,3 +1,6 @@
+#ifndef COMMENT_H
+#define COMMENT_H
+
 #pragma once
 #include <string>
 
@@ -28,3 +31,5 @@ public:
     //toString to output the class better
     std::string toString();
 };
+
+#endif  // COMMENT_H

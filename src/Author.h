@@ -1,3 +1,6 @@
+#ifndef AUTHOR_H
+#define AUTHOR_H
+
 #pragma once
 #include<string>
 
@@ -20,3 +23,6 @@ public:
     //toString to print the class well (for testing)
     std::string toString();
 };
+
+
+#endif  // AUTHOR_H
