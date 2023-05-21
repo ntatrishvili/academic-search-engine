@@ -13,15 +13,11 @@ Entry::Entry(std::string id, std::tm updateDate, std::tm publishDate, std::strin
 }
 Entry::Entry()
 {
-    // id="";
-    // updateDate=new tm();
-    // publishDate=new tm();
-    // title = "";
-    // summary = "";
-    // authors = new std::vector<Author>();
-    // link = "";
-    // comment = new Comment();
-    // Category = new Category();
+    id="";
+    title = "";
+    summary = "";
+    link = "";
+    comment = new Comment();
 }
 
 std::string Entry::getId() { return id; }
