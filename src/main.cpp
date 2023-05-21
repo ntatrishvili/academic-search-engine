@@ -34,6 +34,9 @@ int main() {
     vec.push_back(a3);
 
     Entry* entry = new Entry("123", updateDate, publishDate, "satauri", "descroption", vec, "https.com", c1 );
+    Entry* entry2 = new Entry();
+    std::cout<<entry2->getLink()<<std::endl;
+
     std::cout<<entry->toString()<<std::endl;
     // std::cout<<c1->toString()<<std::endl;
     // std::cout<<c2->toString()<<std::endl;
