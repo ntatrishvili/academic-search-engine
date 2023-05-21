@@ -8,9 +8,10 @@ class Author
 
 public:
     //constructors for all cases
-    Author(std::string _name, std::string _affiliation);
-    Author(std::string _name);
     Author();
+    Author(std::string _name);
+    Author(std::string _name, std::string _affiliation);
+    Author(const Author& theOther);
     //destructor
     ~Author(){}
     //getters for all fields
