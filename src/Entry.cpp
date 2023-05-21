@@ -44,7 +44,7 @@ std::vector<Author *> Entry::getAuthors()
     }
     catch (const std::exception& ex)
     {
-        std::cerr << "could not copy authors!!" << std::endl<<ex.what()<<std::endl;
+        std::cerr << "could not return authors!!" << std::endl;
     }
     return cpyAuthors;
 }
