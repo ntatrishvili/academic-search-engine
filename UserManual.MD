@@ -7,8 +7,8 @@ The aim of the project is to give user a chance to search for academic papers in
 Disclaimer: The code can be run only on Linux infrastructure.
 
 ### To start the code:
-- type in `make install` command followed by `make` command in the terminal to build the program
-- type in the `./main.out` command to start the program
+- run the `make install`, then `make` command from linux terminal to build the `main.out` file
+- run the `main.out` executeble to start the program
 
 ### To navigate in the program:
 - type in your search in the terminal
