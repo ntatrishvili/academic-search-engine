@@ -6,7 +6,7 @@
 #include "Feed.h"
 
 // connects to the API
-//  static size_t WriteCallback(char *contents, size_t size, size_t nmemb, void *userp);
+static size_t WriteCallback(char *contents, size_t size, size_t nmemb, void *userp);
 // used to build the query, replaces all the spaces with '+'s to build the url
 std::string replaceSpacesWithPlus(const std::string &input);
 // builds the url
@@ -19,6 +19,10 @@ void saveData(std::string &response);
 Feed *createFeed();
 // acts as a menu uniting and piping all the functions in the Client class
 Feed *getData();
+//asks the user what way they'd like to see the data and displays it
+void displayData(Feed* feed);
+//checks if the inputted string in indeed a number
+bool isInteger(const std::string& inputNum);
 // store the feed in a human-readable .txt file
 void storeFeed(Feed* feed);
 #endif // CLIENT_H

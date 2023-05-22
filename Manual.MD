@@ -27,8 +27,11 @@ Disclaimer: The code can be run only on Linux infrastructure.
 - run the `main.out` executeble to start the program
 
 #### To navigate in the program:
+- follow the instructions
 - type in your search in the terminal
-- you can view the results written in the terminal or in the files made in the output folder
+- choose 1 if you want to view the data in the files made in the content folder
+- choose 2 if you want to view in the files in the terminal
+
 ---
 ## Developer Manual
 
@@ -80,8 +83,11 @@ Each class has a `toString()` method to display the data stored inside in an eff
 -  `writeCallBack`- to make the request for curl
 - `queryBuilder` - to build the HTTP Get request
 -  `savaData` - to store the received data from the request to an `.xml` file,
-- createFeed - to take the data from the `.xml` file and store it in the classes
-- `getData()` to unite all these methods in a menu-like structure
+- `createFeed` - to take the data from the `.xml` file and store it in the classes
+- `getData()` - to unite all these methods in a menu-like structure
+- `displayData()` - to properly show the data to the user (gives 2 options, terminal or stored in a file)
+- `storeFeed()` - to store the data in a file
+
 ---
 ### Possible Future Modifications
 The future plan for project is to add a GUI to make the program more visually appealing

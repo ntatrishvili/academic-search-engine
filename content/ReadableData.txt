@@ -1,308 +1,178 @@
 Entries:
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/cond-mat/0102536v1
+	ID: http://arxiv.org/abs/1409.0579v1
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Impact of Electron-Electron Cusp on Configuration Interaction Energies
-	Summary:   The effect of the electron-electron cusp on the convergence of configuration
-interaction (CI) wave functions is examined. By analogy with the
-pseudopotential approach for electron-ion interactions, an effective
-electron-electron interaction is developed which closely reproduces the
-scattering of the Coulomb interaction but is smooth and finite at zero
-electron-electron separation. The exact many-electron wave function for this
-smooth effective interaction has no cusp at zero electron-electron separation.
-We perform CI and quantum Monte Carlo calculations for He and Be atoms, both
-with the Coulomb electron-electron interaction and with the smooth effective
-electron-electron interaction. We find that convergence of the CI expansion of
-the wave function for the smooth electron-electron interaction is not
-significantly improved compared with that for the divergent Coulomb interaction
-for energy differences on the order of 1 mHartree. This shows that, contrary to
-popular belief, description of the electron-electron cusp is not a limiting
-factor, to within chemical accuracy, for CI calculations.
+	Title: CH and the Moore-Mrowka Problem
+	Summary:   We show that the Continuum Hypothesis is consistent with all regular spaces
+of hereditarily countable $\pi$-character being C-closed. This gives us a model
+of ZFC in which the Continuum Hypothesis holds and compact Hausdorff spaces of
+countable tightness are sequential.
 
 	Authors:
-	Author:	name:David Prendergast	affiliation:Department of Physics
+	Author: name:Alan Dow
 
-	Author:	name:M. Nolan	affiliation:NMRC, University College, Cork, Ireland
-
-	Author:	name:Claudia Filippi	affiliation:Department of Physics
-
-	Author:	name:Stephen Fahy	affiliation:Department of Physics
-
-	Author:	name:J. C. Greer	affiliation:NMRC, University College, Cork, Ireland
+	Author: name:Todd Eisworth
 
 	Link: ----------------
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/astro-ph/0608371v1
+	ID: http://arxiv.org/abs/2103.03343v1
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Electron thermal conductivity owing to collisions between degenerate
-  electrons
-	Summary:   We calculate the thermal conductivity of electrons produced by
-electron-electron Coulomb scattering in a strongly degenerate electron gas
-taking into account the Landau damping of transverse plasmons. The Landau
-damping strongly reduces this conductivity in the domain of ultrarelativistic
-electrons at temperatures below the electron plasma temperature. In the inner
-crust of a neutron star at temperatures T < 1e7 K this thermal conductivity
-completely dominates over the electron conductivity due to electron-ion
-(electron-phonon) scattering and becomes competitive with the the electron
-conductivity due to scattering of electrons by impurity ions.
+	Title: A converse of the Banach contraction principle for partial metric spaces
+  and the continuum hypothesis
+	Summary:   A version of the Bessaga inverse of the Banach contraction principle for
+partial metric spaces is presented. Equivalence of that version and the
+continuum hypothesis is shown as well.
 
 	Authors:
-	Author:	name:P. S. Shternin	affiliation:Ioffe Physico-Technical Institute
-
-	Author:	name:D. G. Yakovlev	affiliation:Ioffe Physico-Technical Institute
+	Author: name:Piotr Maćkowiak
 
 	Link: ----------------
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/1802.06593v1
+	ID: http://arxiv.org/abs/quant-ph/0110024v1
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Electron pairing: from metastable electron pair to bipolaron
-	Summary:   Starting from the shell structure in atoms and the significant correlation
-within electron pairs, we distinguish the exchange-correlation effects between
-two electrons of opposite spins occupying the same orbital from the average
-correlation among many electrons in a crystal. In the periodic potential of the
-crystal with lattice constant larger than the effective Bohr radius of the
-valence electrons, these correlated electron pairs can form a metastable energy
-band above the corresponding single-electron band separated by an energy gap.
-In order to determine if these metastable electron pairs can be stabilized, we
-calculate the many-electron exchange-correlation renormalization and the
-polaron correction to the two-band system with single electrons and electron
-pairs. We find that the electron-phonon interaction is essential to
-counterbalance the Coulomb repulsion and to stabilize the electron pairs. The
-interplay of the electron-electron and electron-phonon interactions, manifested
-in the exchange-correlation energies, polaron effects, and screening, is
-responsible for the formation of electron pairs (bipolarons) that are located
-on the Fermi surface of the single-electron band.
+	Title: Real continuum
+	Summary:   Some physical consequences of the negation of the continuum hypothesis are
+considered. It is shown that quantum and classical mechanics are component
+parts of the multicomponent description of the set of variable infinite
+cardinality. Existence and properties of the set follow directly from the
+independence of the continuum hypothesis. Particular emphasis is laid on
+set-theoretic aspect.
 
 	Authors:
-	Author: name:Guo-Qiang Hai
-
-	Author: name:Ladir Cândido
-
-	Author: name:Braulio G. A. Brito
-
-	Author: name:François M. Peeters
+	Author: name:O. Yaremchuk
 
 	Link: ----------------
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/2010.01066v1
+	ID: http://arxiv.org/abs/1011.0787v3
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Electron Temperature Anisotropy and Electron Beam Constraints From
-  Electron Kinetic Instabilities in the Solar Wind
-	Summary:   Electron temperature anisotropies and electron beams are nonthermal features
-of the observed nonequilibrium electron velocity distributions in the solar
-wind. In collision-poor plasmas these nonequilibrium distributions are expected
-to be regulated by kinetic instabilities through wave-particle interactions.
-This study considers electron instabilities driven by the interplay of core
-electron temperature anisotropies and the electron beam, and firstly gives a
-comprehensive analysis of instabilities in arbitrary directions to the
-background magnetic field. It clarifies the dominant parameter regime (e.g.,
-parallel core electron plasma beta $\beta_{\mathrm{ec\parallel}}$, core
-electron temperature anisotropy $A_{\mathrm{ec}}\equiv
-T_{\mathrm{ec\perp}}/T_{\mathrm{ec\parallel}}$, and electron beam velocity
-$V_{\mathrm{eb}}$) for each kind of electron instability (e.g., the electron
-beam-driven electron acoustic/magnetoacoustic instability, the electron
-beam-driven whistler instability, the electromagnetic electron cyclotron
-instability, the electron mirror instability, the electron firehose
-instability, and the ordinary-mode instability). It finds that the electron
-beam can destabilize electron acoustic/magnetoacoustic waves in the
-low-$\beta_{\mathrm{ec\parallel}}$ regime, and whistler waves in the medium-
-and large-$\beta_{\mathrm{ec\parallel}}$ regime. It also finds that a new
-oblique fast-magnetosonic/whistler instability is driven by the electron beam
-with $V_{\mathrm{eb}}\gtrsim7V_{\mathrm{A}}$ in a regime where
-$\beta_{\mathrm{ec\parallel}}\sim0.1-2$ and $A_{\mathrm{ec}}<1$. Moreover, this
-study presents electromagnetic responses of each kind of electron instability.
-These results provide a comprehensive overview for electron instability
-constraints on core electron temperature anisotropies and electron beams in the
-solar wind.
+	Title: Deciding the Continuum Hypothesis with the Inverse Powerset
+	Summary:   We introduce the concept of inverse powerset by adding three axioms to the
+Zermelo-Fraenkel set theory. This extends the Zermelo-Fraenkel set theory with
+a new type of set which is motivated by an intuitive meaning and interesting
+applications. We present different ways to extend the definition of cardinality
+and show that one implies the continuum hypothesis while another implies the
+negation of the continuum hypothesis. We will also explore the idea of empty
+sets of different cardinalities which could be seen as the empty counterpart of
+Cantor's theorem for infinite sets.
 
 	Authors:
-	Author: name:Heyu Sun
-
-	Author: name:Jinsong Zhao
-
-	Author: name:Wen Liu
-
-	Author: name:Huasheng Xie
-
-	Author: name:Dejin Wu
+	Author: name:Patrick St-Amant
 
 	Link: ----------------
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/1501.04914v1
+	ID: http://arxiv.org/abs/1110.5037v2
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Hamiltonian of a many-electron system with single-electron and
-  electron-pair states in a two-dimensional periodic potential
-	Summary:   Based on the metastable electron-pair energy band in a two-dimensional (2D)
-periodic potential obtained previously by Hai and Castelano [J. Phys.: Condens.
-Matter 26, 115502 (2014)], we present in this work a Hamiltonian of many
-electrons consisting of single electrons and electron pairs in the 2D system.
-The electron-pair states are metastable of energies higher than those of the
-single-electron states at low electron density. We assume two different
-scenarios for the single-electron band. When it is considered as the lowest
-conduction band of a crystal, we compare the obtained Hamiltonian with the
-phenomenological model Hamiltonian of a boson-fermion mixture proposed by
-Friedberg and Lee [Phys. Rev. B 40, 6745 (1989)]. Single-electron-electron-pair
-and electron-pair-electron-pair interaction terms appear in our Hamiltonian and
-the interaction potentials can be determined from the electron-electron Coulomb
-interactions. When we consider the single-electron band as the highest valence
-band of a crystal, we show that holes in this valence band are important for
-stabilization of the electron-pair states in the system.
+	Title: Forcing Axioms and the Continuum Hypothesis, part II: Transcending
+  ω_1-sequences of real numbers
+	Summary:   The purpose of this article is to prove that the forcing axiom for completely
+proper forcings is inconsistent with the Continuum Hypothesis. This answers a
+longstanding problem of Shelah. The corresponding completely proper forcing
+which can be constructed using CH is moreover a tree whose square is special
+off the diagonal. While such trees had previously been constructed by Jensen
+and Kunen under the assumption of Jensen's diamond principle, this is the first
+time such a construction has been carried out using the Continuum Hypothesis.
 
 	Authors:
-	Author: name:G. -Q. Hai
-
-	Author: name:F. M. Peeters
+	Author: name:Justin Tatch Moore
 
 	Link: ----------------
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/0707.4225v1
+	ID: http://arxiv.org/abs/2112.15468v3
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Electron-Electron Bremsstrahlung Emission and the Inference of Electron
-  Flux Spectra in Solar Flares
-	Summary:   Although both electron-ion and electron-electron bremsstrahlung contribute to
-the hard X-ray emission from solar flares, the latter is normally ignored. Such
-an omission is not justified at electron (and photon) energies above $\sim 300$
-keV, and inclusion of the additional electron-electron bremsstrahlung in
-general makes the electron spectrum required to produce a given hard X-ray
-spectrum steeper at high energies.
-  Unlike electron-ion bremsstrahlung, electron-electron bremsstrahlung cannot
-produce photons of all energies up to the maximum electron energy involved. The
-maximum possible photon energy depends on the angle between the direction of
-the emitting electron and the emitted photon, and this suggests a diagnostic
-for an upper cutoff energy and/or for the degree of beaming of the accelerated
-electrons.
-  We analyze the large event of January 17, 2005 observed by RHESSI and show
-that the upward break around 400 keV in the observed hard X-ray spectrum is
-naturally accounted for by the inclusion of electron-electron bremsstrahlung.
-Indeed, the mean source electron spectrum recovered through a regularized
-inversion of the hard X-ray spectrum, using a cross-section that includes both
-electron-ion and electron-electron terms, has a relatively constant spectral
-index $\delta$ over the range from electron kinetic energy $E = 200$ keV to $E
-= 1$ MeV. However, the level of detail discernible in the recovered electron
-spectrum is not sufficient to determine whether or not any upper cutoff energy
-exists.
+	Title: The Keisler-Shelah isomorphism theorem and the continuum hypothesis II
+	Summary:   We continue the investigation started in [Sh:1215] about the relation between
+the Keilser-Shelah isomorphism theorem and the continuum hypothesis. In
+particular, we show it is consistent that the continuum hypothesis fails and
+for any given sequence $\mathbf m=\langle (\mathbb{M}^{1}_n, \mathbb{M}^{2}_n:
+n < \omega \rangle$ of models of size at most $\aleph_1$ in a countable
+language, if the sequence satisfies a mild extra property, then for every
+non-principal ultrafilter $\mathcal D$ on $\omega$, if the ultraproducts
+$\prod\limits_{\mathcal D} \mathbb{M}^{1}_n$ and $\prod\limits_{\mathcal D}
+\mathbb{M}^{2}_n$ are elementarily equivalent, then they are isomorphic.
 
 	Authors:
-	Author: name:Eduard P. Kontar
+	Author: name:Mohammad Golshani
 
-	Author: name:A. Gordon Emslie
-
-	Author: name:Anna Maria Massone
-
-	Author: name:Michele Piana
-
-	Author: name:John C. Brown
-
-	Author: name:Marco Prato
+	Author: name:Saharon Shelah
 
 	Link: ----------------
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/astro-ph/9904306v1
+	ID: http://arxiv.org/abs/physics/0205071v1
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Improved scenario of baryogenesis
-	Summary:   It is assumed that, in the primordial plasma, at the temperatures above the
-mass of electron, fermions are in the neutral state being the superposition of
-particle and antiparticle. There exists neutral proton-electron symmetry.
-Proton-electron equilibrium is defined by the proton-electron mass difference.
-At the temperature equal to the mass of electron, pairs of neutral electrons
-annihilate into photons, and pairs of neutral protons and electrons survive as
-protons and electrons.
+	Title: Problem of water vapor absorption continuum in atmospheric windows.
+  Return of dimer hypothesis
+	Summary:   Two alternative hypotheses try to explain the origin of the continuum. The
+present communication gives new argument in favor of the dimer hypothesis. This
+argument is based on the existence of the wide component of line in absorption
+spectrum of polyatomic molecules.
 
 	Authors:
-	Author: name:D. L. Khokhlov
+	Author: name:V. A. Kuz'menko
 
 	Link: ----------------
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/cond-mat/0310615v1
+	ID: http://arxiv.org/abs/1107.1692v1
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Exact Electron-Pairing Ground States of Tight-Binding Models with Local
-  Attractive Interactions
-	Summary:   We present a class of exactly solvable models of correlated electrons. The
-models are defined in any dimension $d$ and consist of electron-hopping terms
-and local attractive interactions between electrons. For each even number of
-electrons less than or equal to $1/(d+1)$-filling, we find the exact ground
-state in which all electrons form pairs of a certain type, and thus the models
-exhibit an electron-pair condensation.
+	Title: Under the Continuum Hypothesis all nonreflexive Banach space ultrapowers
+  are primary
+	Summary:   In this note a large class of primary Banach spaces is characterized. Namely,
+it will be demonstrated that under the Continuum Hypothesis the ultrapower of
+any infinite dimensional nonsuperreflexive Banach space is always primary.
+Consequently, any infinite dimensional nonsuperreflexive Banach space can be
+isometrically embedded into its primary ultrapowers.
 
 	Authors:
-	Author: name:Akinori Tanaka
+	Author: name:Piotr Wilzcek
 
 	Link: ----------------
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/2101.10508v1
+	ID: http://arxiv.org/abs/1107.1693v1
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Insights into the Electron-Electron Interaction from Quantum Monte Carlo
-  Calculations
-	Summary:   The effective electron-electron interaction in the electron gas depends on
-both the density and spin local field factors. Variational Diagrammatic Quantum
-Monte Carlo calculations of the spin local field factor are reported and used
-to quantitatively present the full spin-dependent, electron-electron
-interaction. Together with the charge local field factor from previous
-Diffusion Quantum Monte Carlo calculations, we obtain the complete form of the
-effective electron-electron interaction in the uniform three-dimensional
-electron gas. Very simple quadratic formulas are presented for the local field
-factors that quantitatively produce all of the response functions of the
-electron gas at metallic densities.
-  Exchange and correlation become increasingly important at low densities. At
-the compressibility divergence at rs = 5.25, both the direct (screened Coulomb)
-term and the charge-dependent exchange term in the electron-electron
-interaction at q=0 are separately divergent. However, due to large
-cancellations, their difference is finite, well behaved, and much smaller than
-either term separately. As a result, the spin contribution to the
-electron-electron interaction becomes an important factor. The static
-electron-electron interaction is repulsive as a function of density but is less
-repulsive for electrons with parallel spins.
-  The effect of allowing a deformable, rather than rigid, positive background
-is shown to be as quantitatively important as exchange and correlation. As a
-simple concrete example, the electron-electron interaction is calculated using
-the measured bulk modulus of the alkali metals with a linear phonon dispersion.
-The net electron-electron interaction in lithium is attractive for wave vectors
-$0-2k_F$, which suggests superconductivity, and is mostly repulsive for the
-other alkali metals.
+	Title: Some Representation Theorem for nonreflexive Banach space ultrapowers
+  under the Continuum Hypothesis
+	Summary:   In this paper it will be shown that assuming the Continuum Hypothesis (CH)
+every nonreflexive Banach space ultrapower is isometrically isomorphic to the
+space of continuous, bounded and real-valued functions on the Parovicenko
+space. This Representation Theorem will be helpful in proving some facts from
+geometry and topology of nonreflexive Banach space ultrapowers.
 
 	Authors:
-	Author: name:Carl A. Kukkonen
-
-	Author: name:Kun Chen
+	Author: name:Piotr Wilczek
 
 	Link: ----------------
 ----------------
 Entry:
-	ID: http://arxiv.org/abs/cond-mat/0205001v1
+	ID: http://arxiv.org/abs/2102.02901v1
 	Update Date: 1900-01-00
 	Publish Date: 1900-01-00
-	Title: Electron-electron interactions in a weakly screened two-dimensional
-  electron system
-	Summary:   We probe the strength of electron-electron interactions using
-magnetoconductivity measurements of two-dimensional non-degenerate electrons on
-liquid helium at 1.22 K. Our data extend to electron densities that are two
-orders of magnitude smaller than previously reported. We span both the
-independent-electron regime where the data are qualitatively described by the
-self-consistent Born approximation (SCBA), and the strongly-interacting
-electron regime. At finite fields we observe a crossover from SCBA to Drude
-theory as a function of electron density.
+	Title: A Formal Proof of the Independence of the Continuum Hypothesis
+	Summary:   We describe a formal proof of the independence of the continuum hypothesis
+($\mathsf{CH}$) in the Lean theorem prover. We use Boolean-valued models to
+give forcing arguments for both directions, using Cohen forcing for the
+consistency of $\neg \mathsf{CH}$ and a $\sigma$-closed forcing for the
+consistency of $\mathsf{CH}$.
 
 	Authors:
-	Author: name:I. Karakurt
+	Author: name:Jesse Michael Han
 
-	Author: name:A. J. Dahm
+	Author: name:Floris van Doorn
 
 	Link: ----------------

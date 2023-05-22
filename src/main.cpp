@@ -15,8 +15,6 @@ int main()
     //Display the data to the user in their chosen way
     displayData(feed);
 
-    // store the feed in a txt file
-    storeFeed(feed);
     // sort and filter the received data with the additional filters
     // filterData();
     return 0;

@@ -216,13 +216,37 @@ Feed *getData()
 
 void storeFeed(Feed *feed)
 {
+    // makes a file to store the readable data
     std::ofstream file("./content/ReadableData.txt");
-     if (file.is_open()) {
+    if (file.is_open())
+    {
+        // if the open was successful stores the data
         file << feed->toString();
         file.close();
         std::cout << "You can now view the information about these papers in the ReadableData.txt file" << std::endl;
-    } else {
+    }
+    else
+    {
+        // if the open was not successful, outputs the error
         std::cerr << "Failed to open the file." << std::endl;
     }
+}
 
+void displayData(Feed *feed)
+{
+    std::cout << "\nPhew! That was a lot! \nAll the papers are here!! How would you like to view them? Choose:\n1 to store them in a file\n2 to display them in the terminal\n\n";
+    int choice;
+    std::cin >> choice;
+    if (choice == 1)
+    {
+        storeFeed(feed);
+    }
+    else if (choice == 2)
+    {
+        std::cout << feed->toString();
+    }
+    else
+    {
+        std::cerr << "Sorry, that option is not available yet!" << std::endl;
+    }
 }
