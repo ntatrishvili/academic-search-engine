@@ -1,6 +1,7 @@
 #include <string.h>
 #include <iostream>
 #include <fstream>
+#include <string>
 #include <sstream>
 #include <curl/curl.h>
 #include "rapidxml.hpp"
@@ -13,19 +14,37 @@ static size_t WriteCallback(char *contents, size_t size, size_t nmemb, void *use
     return size * nmemb;
 }
 
+std::string replaceSpacesWithPlus(const std::string &input)
+{
+    std::string result;
+    for (char c : input)
+    {
+        if (c == ' ')
+        {
+            result = result + '+';
+        }
+        else
+        {
+            result = result + c;
+        }
+    }
+    return result;
+}
+
 std::string queryBuilder()
 {
     std::string myQuery;
     std::string input;
     std::cout << "please write the key words you want to search by: " << std::endl;
-    std::cin >> input;
-    std::replace(input.begin(), input.end(), ' ', '+');
+    std::getline(std::cin, input);
+    input = replaceSpacesWithPlus(input);
     myQuery = "http://export.arxiv.org/api/query?search_query=all:" + input + "&start=0&max_results=10";
     return myQuery;
 }
 
 void saveData(std::string &response)
 {
+    //make the xml document
     rapidxml::xml_document<> doc;
 
     // save the whole data as an xml
@@ -33,7 +52,8 @@ void saveData(std::string &response)
     if (feed.is_open())
     {
         char *cpy = const_cast<char *>(response.c_str());
-        doc.parse<0>(cpy);
+        //do not parse depricated NUL characters
+        doc.parse<rapidxml::parse_non_destructive>(cpy);
 
         // write the modified response in feed
         feed << response;
@@ -47,12 +67,13 @@ void saveData(std::string &response)
 
 Feed *createFeed()
 {
+    //create the feed object
     Feed *myFeed = new Feed();
-
+    //open the file
     std::ifstream feed("content/data.xml");
     if (!feed.is_open())
     {
-        std::cout << "Failed to open data.xml file!" << std::endl;
+        std::cerr << "Failed to open data.xml file!" << std::endl;
         return myFeed;
     }
     rapidxml::xml_document<> doc;
@@ -65,14 +86,12 @@ Feed *createFeed()
         return myFeed;
     }
 
-    // Parse the buffer
+    // Parse the whole file into the doc
     doc.parse<0>(&buffer[0]);
-
-    // // Access the root node
+    //Now starts parsing the nodes in doc into the class objects 
+    //Access the root node
     rapidxml::xml_node<> *rootNode = doc.first_node("feed");
     std::vector<Entry *> entries;
-    rapidxml::xml_node<> *test = rootNode->first_node("entry");
-    rapidxml::print(std::ostreambuf_iterator<char>(feed), doc, 0);
     // Access the child nodes (entries)
     for (rapidxml::xml_node<> *entryNode = rootNode->first_node("entry"); entryNode; entryNode = entryNode->next_sibling("entry"))
     {
@@ -94,7 +113,6 @@ Feed *createFeed()
             }
             Author *auth = new Author(name, affiliation);
             authors.push_back(auth);
-            std::cout << auth->getName() << std::endl;
         }
         // assembling the comment
         Comment *comment = new Comment();
