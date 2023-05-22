@@ -1,3 +1,4 @@
+#include"Feed.h"
 //connects to the API
 static size_t WriteCallback(char *contents, size_t size, size_t nmemb, void *userp);
 //used to build the query, replaces all the spaces with '+'s to build the url

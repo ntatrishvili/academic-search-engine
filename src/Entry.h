@@ -1,3 +1,8 @@
+#ifndef ENTRY_H
+#define ENTRY_H
+
+#pragma once
+
 #include <ctime>
 #include <vector>
 #include "Author.h"
@@ -46,3 +51,6 @@ public:
     // toString to output the class better
     std::string toString();
 };
+
+
+#endif  // ENTRY_H

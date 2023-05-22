@@ -36,8 +36,8 @@ int main()
     Entry *entry2 = new Entry();
 
     Feed *feed = new Feed();
-    feed->addEntry(*entry);
-    feed->addEntry(*entry2);
+    feed->addEntry(entry);
+    feed->addEntry(entry2);
     // std::cout<<feed->toString()<<std::endl;
     // fetch data from the arxiv
     getData();

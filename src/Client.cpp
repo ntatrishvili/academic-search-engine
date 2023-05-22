@@ -5,7 +5,6 @@
 #include <sstream>
 #include <curl/curl.h>
 #include "rapidxml.hpp"
-#include "Feed.h"
 #include "Client.h"
 
 static size_t WriteCallback(char *contents, size_t size, size_t nmemb, void *userp)
@@ -44,7 +43,7 @@ std::string queryBuilder()
 
 void saveData(std::string &response)
 {
-    //make the xml document
+    // make the xml document
     rapidxml::xml_document<> doc;
 
     // save the whole data as an xml
@@ -52,7 +51,7 @@ void saveData(std::string &response)
     if (feed.is_open())
     {
         char *cpy = const_cast<char *>(response.c_str());
-        //do not parse depricated NUL characters
+        // do not parse depricated NUL characters
         doc.parse<rapidxml::parse_non_destructive>(cpy);
 
         // write the modified response in feed
@@ -67,10 +66,10 @@ void saveData(std::string &response)
 
 Feed *createFeed()
 {
-    //create the feed object
+    // create the feed object
     Feed *myFeed = new Feed();
-    //open the file
-    std::ifstream feed("content/data.xml");
+    // open the file
+    std::ifstream feed("content/feed.xml");
     if (!feed.is_open())
     {
         std::cerr << "Failed to open data.xml file!" << std::endl;
@@ -88,10 +87,10 @@ Feed *createFeed()
 
     // Parse the whole file into the doc
     doc.parse<0>(&buffer[0]);
-    //Now starts parsing the nodes in doc into the class objects 
-    //Access the root node
+    // Now starts parsing the nodes in doc into the class objects
+    // Access the root node
     rapidxml::xml_node<> *rootNode = doc.first_node("feed");
-    std::vector<Entry *> entries;
+    std::vector<Entry*> entries;
     // Access the child nodes (entries)
     for (rapidxml::xml_node<> *entryNode = rootNode->first_node("entry"); entryNode; entryNode = entryNode->next_sibling("entry"))
     {
@@ -101,12 +100,12 @@ Feed *createFeed()
         for (rapidxml::xml_node<> *entryNode2 = entryNode->first_node("author"); entryNode2; entryNode2 = entryNode2->next_sibling("author"))
         {
             std::string name, affiliation = "";
-            node = entryNode->first_node("name");
+            node = entryNode2->first_node("name");
             if (node)
             {
                 name = node->value();
             }
-            node = entryNode->first_node("arxiv:affiliation");
+            node = entryNode2->first_node("arxiv:affiliation");
             if (node)
             {
                 affiliation = node->value();
@@ -168,7 +167,7 @@ Feed *createFeed()
         std::tm publishTime;
 
         Entry *entry = new Entry(id, updateTime, publishTime, title, summary, authors, link, comment);
-        entries.push_back(entry);
+        myFeed->addEntry(entry);
     }
     feed.close();
     return myFeed;
