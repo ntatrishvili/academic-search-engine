@@ -90,7 +90,7 @@ Feed *createFeed()
     // Now starts parsing the nodes in doc into the class objects
     // Access the root node
     rapidxml::xml_node<> *rootNode = doc.first_node("feed");
-    std::vector<Entry*> entries;
+    std::vector<Entry *> entries;
     // Access the child nodes (entries)
     for (rapidxml::xml_node<> *entryNode = rootNode->first_node("entry"); entryNode; entryNode = entryNode->next_sibling("entry"))
     {
@@ -122,9 +122,9 @@ Feed *createFeed()
         {
             rapidxml::xml_node<> *node2;
             node2 = node->first_node("");
-            if (node)
+            if (node2)
             {
-                pages = std::stoi(node->value());
+                // pages = std::stoi(node->value());
             }
             std::string commentText = "";
 
@@ -173,8 +173,11 @@ Feed *createFeed()
     return myFeed;
 }
 
-void getData()
+Feed *getData()
 {
+    Feed *f = new Feed();
+
+    // create the HTTP request
     CURL *curl;
     CURLcode res;
     std::string response;
@@ -182,23 +185,44 @@ void getData()
     curl = curl_easy_init();
     if (curl)
     {
+        // assemble the request url
         std::string url = queryBuilder();
+
         curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &response);
-
+        // send the request
         res = curl_easy_perform(curl);
+        // check if the get was successful
         if (res != CURLE_OK)
         {
             std::cerr << "curl_easy_perform() failed: " << curl_easy_strerror(res) << std::endl;
         }
         else
         {
+            // if it was successful
+            // save the data in a .xml file
             saveData(response);
+            // parse the data into a class
             Feed *f = createFeed();
-            std::cout << f->toString() << std::endl;
+            // return the parsed data
+            return f;
         }
-
         curl_easy_cleanup(curl);
+        // return an empty feed if something went wrong
+        return f;
     }
+}
+
+void storeFeed(Feed *feed)
+{
+    std::ofstream file("./content/ReadableData.txt");
+     if (file.is_open()) {
+        file << feed->toString();
+        file.close();
+        std::cout << "You can now view the information about these papers in the ReadableData.txt file" << std::endl;
+    } else {
+        std::cerr << "Failed to open the file." << std::endl;
+    }
+
 }
